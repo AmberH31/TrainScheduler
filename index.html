@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assests/css/style.css" />
+  </head>
+  <body>
+    <div class="outerContainer">
+      <div>
+        <label for="trainName">Train Name</label>
+        <input id="trainName" type="text" name="trainName" />
+      </div>
+      <div>
+        <label for="destination">Destination</label>
+        <input id="destination" type="text" name="destination" />
+      </div>
+      <div>
+        <label for="firstTrain">First Train</label>
+        <input id="firstTrain" type="time" value="19:00" name="firstTrain" />
+      </div>
+      <div>
+        <label for="frequency">Frequency</label>
+        <input id="frequency" type="text" name="frequency" />
+      </div>
+    </div>
+    <button onclick="handleSubmit()">Submit</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-database.js"></script>
+    <script src="assests/js/index.js"></script>
+  </body>
+</html>
